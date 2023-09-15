@@ -33,6 +33,7 @@ body{
     border: solid black;
     border-radius: 20px ;
     padding: 20px;
+   height: 100px;
 }
 
 button{
@@ -46,4 +47,26 @@ button{
     font-size: 16px;
     border-radius: 4px;
     cursor: pointer;
+}
+
+@media (max-width: 1700px) {
+  #app{
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  #app{
+      grid-template-columns: 1fr 1fr ;
+  }
+}
+@media (max-width: 480px) {
+  #app{
+      grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 320px) {
+  #app{
+      grid-template-columns: 1fr;
+  }
 }
